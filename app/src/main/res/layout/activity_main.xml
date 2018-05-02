@@ -8,30 +8,30 @@
 
     <Button
         android:id="@+id/bluetoothbutton"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="TurnBluetoothOff"
         android:text="Turn Off Bluetooth" />
 
     <Button
         android:id="@+id/findDevicesButton"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/bluetoothbutton"
         android:onClick="FindDevices"
         android:text="Find Devices"
         tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="48dp"
-        android:layout_below="@+id/bluetoothbutton"/>
+        tools:layout_editor_absoluteY="48dp" />
 
     <Button
         android:id="@+id/pairedDevicesButton"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/findDevicesButton"
         android:onClick="PairedDevices"
         android:text="Paired Devices"
         tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="96dp"
-        android:layout_below="@+id/findDevicesButton"/>
+        tools:layout_editor_absoluteY="96dp" />
 
 
     <ListView
