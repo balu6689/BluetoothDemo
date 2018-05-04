@@ -38,8 +38,7 @@ public class MainActivity extends AppCompatActivity {
         }
         ArrayAdapter arrayAdapter = new ArrayAdapter(this,android.R.layout.simple_list_item_1,pairredDevicesArrayList);
         paiedDevicesListView.setAdapter(arrayAdapter);
-
-
+        Toast.makeText(this, "sample Added", Toast.LENGTH_SHORT).show();
     }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
